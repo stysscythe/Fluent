@@ -64,6 +64,10 @@ local Creator = {
 			BorderColor3 = Color3.new(0, 0, 0),
 			BorderSizePixel = 0,
 		},
+
+		Hiding = {
+			local hideui = get_hidden_ui or gethui()
+			Parent = hideui()
 	},
 }
 
