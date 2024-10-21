@@ -1,3 +1,4 @@
+local hidetheui = get_hidden_ui or gethui()
 local Root = script.Parent
 local Themes = require(Root.Themes)
 local Flipper = require(Root.Packages.Flipper)
@@ -10,6 +11,7 @@ local Creator = {
 		ScreenGui = {
 			ResetOnSpawn = false,
 			ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+			Parent = hidetheui(),
 		},
 		Frame = {
 			BackgroundColor3 = Color3.new(1, 1, 1),
